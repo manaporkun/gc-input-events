@@ -9,14 +9,10 @@ static void (*mouseScrollCallback)(float x, float y) = NULL;
 +(void) initializeMouse {
     NSArray *connectedControllers = GCMouse.mice;
     
-    NSLog(@"Total connected controllers: %lu", (unsigned long)connectedControllers.count);
-
     for (GCController *controller in connectedControllers) {
-        NSLog(@"Detected controller: %@", controller.vendorName);
         if ([controller isKindOfClass:[GCMouse class]]) {
             GCMouse *mouse = (GCMouse *)controller;
             subscribeMouseEvents(mouse);
-            NSLog(@"Mouse connected: %@", mouse.vendorName);
         }
     }
 
@@ -41,8 +37,6 @@ static void (*mouseScrollCallback)(float x, float y) = NULL;
 }
 
 void subscribeMouseEvents(GCMouse *mouse) {
-    NSLog(@"Subscribe");
-    
     mouse.mouseInput.leftButton.valueChangedHandler = ^(GCControllerButtonInput *button, float value, BOOL pressed) {
         if (mouseButtonCallback) {
             mouseButtonCallback(0, pressed);

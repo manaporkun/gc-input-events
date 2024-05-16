@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F10166F2BF601DC00CC2752 /* GCKeyboardEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F10166E2BF601DC00CC2752 /* GCKeyboardEvents.m */; };
 		4F414D662BEB97CE007A9C4E /* GCMouseEvents.h in Sources */ = {isa = PBXBuildFile; fileRef = 4F924E482BEB63B000D7A696 /* GCMouseEvents.h */; };
 		4F414D672BEB97ED007A9C4E /* GCMouseEvents.m in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F924E442BEB635A00D7A696 /* GCMouseEvents.m */; };
+		4F58DCC62BF6CA0500F7FE10 /* GCKeyboardEvents.m in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F10166E2BF601DC00CC2752 /* GCKeyboardEvents.m */; };
+		4F58DCC72BF6CA0700F7FE10 /* GCKeyboardEvents.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F10166D2BF6016500CC2752 /* GCKeyboardEvents.h */; };
+		4F58DCC82BF6CA0D00F7FE10 /* GCKeyboardEvents.h in Sources */ = {isa = PBXBuildFile; fileRef = 4F10166D2BF6016500CC2752 /* GCKeyboardEvents.h */; };
 		4F924E452BEB635A00D7A696 /* GCMouseEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F924E442BEB635A00D7A696 /* GCMouseEvents.m */; };
 		4F924E4A2BEB667000D7A696 /* GCMouseEvents.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F924E482BEB63B000D7A696 /* GCMouseEvents.h */; };
 		4F924E4B2BEB67AD00D7A696 /* libGCInputEvents.a in Copy Files */ = {isa = PBXBuildFile; fileRef = 4F924E382BEB62F800D7A696 /* libGCInputEvents.a */; };
@@ -18,12 +22,14 @@
 		4F924E362BEB62F800D7A696 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /Users/orkunmanap/Documents/supar/Assets/Plugins/iOS;
+			dstPath = "";
 			dstSubfolderSpec = 0;
 			files = (
+				4F58DCC72BF6CA0700F7FE10 /* GCKeyboardEvents.h in Copy Files */,
+				4F924E4A2BEB667000D7A696 /* GCMouseEvents.h in Copy Files */,
+				4F58DCC62BF6CA0500F7FE10 /* GCKeyboardEvents.m in Copy Files */,
 				4F414D672BEB97ED007A9C4E /* GCMouseEvents.m in Copy Files */,
 				4F924E4B2BEB67AD00D7A696 /* libGCInputEvents.a in Copy Files */,
-				4F924E4A2BEB667000D7A696 /* GCMouseEvents.h in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4F10166D2BF6016500CC2752 /* GCKeyboardEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCKeyboardEvents.h; sourceTree = "<group>"; };
+		4F10166E2BF601DC00CC2752 /* GCKeyboardEvents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCKeyboardEvents.m; sourceTree = "<group>"; };
 		4F924E382BEB62F800D7A696 /* libGCInputEvents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGCInputEvents.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F924E442BEB635A00D7A696 /* GCMouseEvents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCMouseEvents.m; sourceTree = "<group>"; };
 		4F924E482BEB63B000D7A696 /* GCMouseEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCMouseEvents.h; sourceTree = "<group>"; };
@@ -50,6 +58,8 @@
 		4F924E2F2BEB62F800D7A696 = {
 			isa = PBXGroup;
 			children = (
+				4F10166E2BF601DC00CC2752 /* GCKeyboardEvents.m */,
+				4F10166D2BF6016500CC2752 /* GCKeyboardEvents.h */,
 				4F924E482BEB63B000D7A696 /* GCMouseEvents.h */,
 				4F924E442BEB635A00D7A696 /* GCMouseEvents.m */,
 				4F924E392BEB62F800D7A696 /* Products */,
@@ -121,7 +131,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F58DCC82BF6CA0D00F7FE10 /* GCKeyboardEvents.h in Sources */,
 				4F414D662BEB97CE007A9C4E /* GCMouseEvents.h in Sources */,
+				4F10166F2BF601DC00CC2752 /* GCKeyboardEvents.m in Sources */,
 				4F924E452BEB635A00D7A696 /* GCMouseEvents.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,7 +193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = "/Users/orkunmanap/Documents/GCMouseUnity/untitled folder/UnityInputBridge";
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
@@ -238,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = "/Users/orkunmanap/Documents/GCMouseUnity/untitled folder/UnityInputBridge";
+				INSTALL_PATH = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACH_O_TYPE = staticlib;
